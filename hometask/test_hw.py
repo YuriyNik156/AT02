@@ -12,7 +12,7 @@ def test_no_vowels():
     assert count_vowels('rhthm') == 0
 
 # Проверьте, что функция правильно считает гласные в смешанных строках (включая прописные и строчные буквы).
-@pytest.mark.parametrize("test_input", "expected", [
+@pytest.mark.parametrize("test_input, expected", [
     ("classic", 2),     # a, i
     ("GALLERY", 3),     # A, E, Y
     ("pythON", 2),      # y после p - гласная, O
